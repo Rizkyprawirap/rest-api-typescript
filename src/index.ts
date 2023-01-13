@@ -8,6 +8,5 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
 })
 
 app.listen(port, () => {
-  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
   console.log(`Server is running on port ${port}`)
 })
