@@ -1,11 +1,10 @@
-import express, { Application, Request, Response, NextFunction } from 'express'
+import express, { Application } from 'express'
+import { routes } from './routes'
 
 const app: Application = express()
 const port: Number = 4000
 
-app.use('/', (req: Request, res: Response, next: NextFunction) => {
-  res.status(200).send({ message: 'OK' })
-})
+routes(app)
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
