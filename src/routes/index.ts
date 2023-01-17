@@ -5,8 +5,8 @@ import { ProductRouter } from './product.route'
 // Deklarasi route nya adalah sebuah array
 // Nanti kalo misalnya routing nya udah banyak tinggal masukin ke ['endpointnya', nama routenya]
 const _routes: Array<[string, Router]> = [
-  ['/api', EmployeeRouter],
-  ['/api', ProductRouter]
+  ['/employee', EmployeeRouter],
+  ['/product', ProductRouter]
 ]
 
 export const routes = (app: Application) => {
